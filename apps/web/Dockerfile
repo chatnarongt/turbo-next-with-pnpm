@@ -13,7 +13,7 @@ WORKDIR /app
 # ---
 FROM base AS prepare
 # Install turbo globally
-RUN pnpm add --global turbo@^2
+RUN npm add --global turbo@^2
 COPY . .
 # Generate a partial monorepo with a pruned lockfile for a target workspace
 # Assuming "web" is the name in the project's package.json: { name: "web" }
