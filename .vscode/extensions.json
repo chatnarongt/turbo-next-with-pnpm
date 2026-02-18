@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "biomejs.biome",
+    "streetsidesoftware.code-spell-checker",
+    "dotenv.dotenv-vscode",
+    "bradlc.vscode-tailwindcss",
+    "lokalise.i18n-ally"
+  ]
+}

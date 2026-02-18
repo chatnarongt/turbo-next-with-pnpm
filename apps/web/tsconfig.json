@@ -5,16 +5,29 @@
       {
         "name": "next"
       }
-    ]
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@app": ["./app"],
+      "@app/*": ["./app/*"],
+      "@components": ["./components"],
+      "@components/*": ["./components/*"],
+      "@configs": ["./configs"],
+      "@configs/*": ["./configs/*"],
+      "@libs": ["./libs"],
+      "@libs/*": ["./libs/*"],
+      "@locales": ["./public/locales"],
+      "@locales/*": ["./public/locales/*"],
+      "@types": ["./types"],
+      "@types/*": ["./types/*"]
+    }
   },
   "include": [
     "**/*.ts",
     "**/*.tsx",
     "next-env.d.ts",
-    "next.config.js",
+    "next.config.ts",
     ".next/types/**/*.ts"
   ],
-  "exclude": [
-    "node_modules"
-  ]
+  "exclude": ["node_modules"]
 }

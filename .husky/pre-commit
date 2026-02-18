@@ -1,0 +1,10 @@
+# Run Biome check and auto-fix
+echo "🔍 Running Biome checks..."
+pnpm run check
+
+# Add any changes made by Biome to the commit
+git add -A
+
+# Run TypeScript type checking
+echo "🔧 Running TypeScript type checks..."
+pnpm run check-types
