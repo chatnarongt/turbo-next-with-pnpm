@@ -13,7 +13,7 @@ WORKDIR /app
 # ---
 FROM base AS prepare
 # Install turbo globally
-RUN npm add --global turbo@^2
+RUN pnpm add --global turbo@^2
 COPY . .
 # Generate a partial monorepo with a pruned lockfile for a target workspace
 # Assuming "web" is the name in the project's package.json: { name: "web" }
@@ -41,7 +41,7 @@ ENV NEXT_PUBLIC_BASE_PATH=$NEXT_PUBLIC_BASE_PATH
 
 # Build the Next.js application
 ENV NEXT_TELEMETRY_DISABLED=1
-RUN pnpm run turbo build
+RUN pnpm run build
 
 # ---
 FROM base AS runner
